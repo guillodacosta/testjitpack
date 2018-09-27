@@ -1,4 +1,8 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.github.guillodacosta'
 
 android {
     compileSdkVersion 28
@@ -26,12 +30,7 @@ task sourceJar(type: Jar) {
     classifier "sources"
 }
 
-// repositories {
-    // maven { url "https://jitpack.io" }
-// }
-
 dependencies {
-    // implementation 'com.github.guillodacosta:testjitpack'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0-rc02'
     implementation "com.android.support.constraint:constraint-layout:${rootProject.ext.versionLayoutConstraint}"
