@@ -4,7 +4,7 @@ apply plugin: 'maven-publish'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "co.com.grupobienraro"
+        applicationId "co.com.heisneberglab"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
